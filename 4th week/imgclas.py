@@ -59,6 +59,8 @@ class ImagePreprocessor:
         """Binary thresholding"""
         return cv2.threshold(image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
     
+
+    
     @staticmethod
     def enhance_contrast(image):
         """Enhance contrast using CLAHE"""
